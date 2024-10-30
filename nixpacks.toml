@@ -15,6 +15,7 @@ cmds = [
 [phases.build]
 cmds = [
   'mix compile',
+  'mix assets.deploy',
   'mkdir -p _build/prod/rel/helloworld_distillery/releases/RELEASES',
   'mix do phx.digest, distillery.release --env=prod',
 ]
